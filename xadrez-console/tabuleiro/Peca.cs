@@ -2,14 +2,14 @@
 {
     class Peca
     {
-        public Posicao Posicao { get; set; }
+        public Posicao? Posicao { get; set; }
         public Cor Cor { get; protected set; }
         public int QtdMovimentos { get; protected set; }
         public Tabuleiro Tab { get; protected set; }
 
-        public Peca(Posicao posicao, Tabuleiro tab, Cor cor)
+        public Peca(Tabuleiro tab, Cor cor)
         {
-            Posicao = posicao;
+            Posicao = null;
             Tab = tab;
             Cor = cor;
             QtdMovimentos = 0;
