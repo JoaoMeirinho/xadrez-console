@@ -40,6 +40,7 @@ try
         
     }
 
+
 }catch(TabuleiroException e)
 {
     Console.WriteLine(e.Message);
